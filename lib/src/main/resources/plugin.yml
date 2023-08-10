@@ -1,0 +1,6 @@
+name: VotiveCore
+description: The plugin is an api for working with races, classes of the VotiveRP server as with objects.
+author: TheDiVaZo
+main: com.votiverp.core.VotiveAPI
+version: '${version}'
+api-version: 1.19
