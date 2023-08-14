@@ -1,12 +1,12 @@
-package com.votiverp.core.ic.character;
+package com.votiverp.core.model.character;
 
-import com.votiverp.core.ic.attribute.group.VotiveGroupAttribute;
-import com.votiverp.core.ic.language.Language;
-import com.votiverp.core.ic.race.Race;
-import com.votiverp.core.ic.religion.Religion;
-import com.votiverp.core.ic.skill.Skill;
-import com.votiverp.core.ic.world.FlorianCalendar;
-import com.votiverp.core.ic.world.FlorianDate;
+import com.votiverp.core.model.attribute.group.VotiveGroupAttribute;
+import com.votiverp.core.model.language.Language;
+import com.votiverp.core.model.race.Race;
+import com.votiverp.core.model.religion.Religion;
+import com.votiverp.core.model.skill.Skill;
+import com.votiverp.core.world.FlorianCalendar;
+import com.votiverp.core.world.FlorianDate;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Singular;
