@@ -1,24 +1,33 @@
 package com.votiverp.core.model.race;
 
+import com.votiverp.core.model.attribute.group.VotiveGroupAttribute;
+import com.votiverp.core.model.skill.Skill;
 import lombok.Builder;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
 import lombok.Singular;
 
-import java.util.Set;
-import java.util.SortedSet;
-import java.util.TreeSet;
+import java.util.*;
 
+@Builder
+@EqualsAndHashCode
 public class Race {
     private final String name;
 
     private final String description;
 
     @Singular
-    private final SortedSet<Level> levels;
+    private final List<Level> levels;
 
-    @Builder
-    public Race(String name, String description, @Singular SortedSet<Level> levels) {
-        this.name = name;
-        this.description = description;
-        this.levels = levels;
+    private final VotiveGroupAttribute groupAttribute;
+    @Singular
+    private final Set<Skill> skills;
+
+    public List<Level> getLevels() {
+        return Collections.unmodifiableList(levels);
+    }
+
+    public Set<Skill> getSkills() {
+        return Collections.unmodifiableSet(skills);
     }
 }

@@ -10,8 +10,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class VotiveAPI extends JavaPlugin {
 
-    private static
-
     @Override
     public void onEnable() {
         Logger.init(new JULHandler(getLogger()));
